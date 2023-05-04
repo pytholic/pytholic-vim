@@ -62,6 +62,3 @@ end
 function _G.smart_shift_tab()
 	return vim.fn.pumvisible() == 1 and "<C-p>" or "<S-Tab>"
 end
-
--- toggle diagnostic remap --
-vim.keymap.set("n", "<leader>dt", "<cmd>:ToggleDiag<CR>", { silent = true })

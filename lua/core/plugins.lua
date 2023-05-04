@@ -87,7 +87,4 @@ return require("packer").startup(function(use)
 
 	-- harpoon --
 	use("theprimeagen/harpoon")
-
-	-- toggle diagnostics --
-	use("WhoIsSethDaniel/toggle-lsp-diagnostics.nvim")
 end)
