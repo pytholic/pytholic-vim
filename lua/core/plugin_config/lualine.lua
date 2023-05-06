@@ -53,8 +53,6 @@ local config = {
 		-- These will be filled later
 		lualine_c = {},
 		lualine_x = {},
-	},
-	inactive_sections = {
 		-- these are to remove the defaults
 		lualine_a = {},
 		lualine_b = {},
