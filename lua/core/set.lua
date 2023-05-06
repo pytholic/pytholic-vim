@@ -23,9 +23,17 @@ vim.opt.termguicolors = true
 vim.opt.scrolloff = 15
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
-
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "80"
-
 vim.g.mapleader = " "
+
+vim.opt.cursorline = true
+
+-- Define autocmd to disable cursorline in insert mode
+vim.cmd([[
+  augroup CursorLineInsertMode
+    autocmd!
+    autocmd InsertEnter * setlocal nocursorline
+    autocmd InsertLeave * setlocal cursorline
+  augroup END
+]])
