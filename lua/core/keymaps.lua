@@ -10,7 +10,7 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- Remap ctrl-/ for vertical split
-vim.api.nvim_set_keymap("n", "<C-_>", ":vsplit<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>/", ":vsplit<CR>", { noremap = true, silent = true })
 
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
