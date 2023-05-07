@@ -62,3 +62,6 @@ end
 function _G.smart_shift_tab()
 	return vim.fn.pumvisible() == 1 and "<C-p>" or "<S-Tab>"
 end
+
+-- toggleterm keymaps --
+vim.keymap.set("n", "<leader>lg", "<cmd>:lua _LAZYGIT_TOGGLE()<CR>")
