@@ -1,3 +1,6 @@
+-- Eviline config for lualine
+-- Author: shadmansaleh
+-- Credit: glepnir
 local lualine = require("lualine")
 
 -- Color table for highlights
@@ -53,6 +56,8 @@ local config = {
 		-- These will be filled later
 		lualine_c = {},
 		lualine_x = {},
+	},
+	inactive_sections = {
 		-- these are to remove the defaults
 		lualine_a = {},
 		lualine_b = {},
@@ -123,7 +128,6 @@ ins_left({
 
 ins_left({
 	"filename",
-	path = 1,
 	cond = conditions.buffer_not_empty,
 	color = { fg = colors.magenta, gui = "bold" },
 })
