@@ -87,4 +87,7 @@ return require("packer").startup(function(use)
 
 	-- harpoon --
 	use("theprimeagen/harpoon")
+
+	-- code runner --
+	use("CRAG666/code_runner.nvim")
 end)
