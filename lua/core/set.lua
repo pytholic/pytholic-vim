@@ -38,13 +38,5 @@ vim.cmd([[
   augroup END
 ]])
 
--- Set the default clang format style to Google
-vim.api.nvim_exec(
-	[[
-  augroup ClangFormatDefaults
-    autocmd!
-    autocmd FileType cpp,c,h lua require('vim-clang-format').setStyle('Google')
-  augroup END
-]],
-	false
-)
+-- clang formatter style set --
+vim.cmd([[autocmd FileType cpp,c,h setlocal formatprg=clang-format\ --style=Google]])
