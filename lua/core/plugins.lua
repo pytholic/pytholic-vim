@@ -90,4 +90,7 @@ return require("packer").startup(function(use)
 
 	-- code runner --
 	use("CRAG666/code_runner.nvim")
+
+	-- clang formatter --
+	use("rhysd/vim-clang-format")
 end)

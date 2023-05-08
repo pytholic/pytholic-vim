@@ -80,3 +80,10 @@ vim.keymap.set("n", "<leader>crp", ":CRProjects<CR>", { noremap = true, silent =
 vim.api.nvim_set_keymap("n", "<leader>cm", ":!cmake -S . -B build<CR>", { noremap = true })
 -- Keymap for running 'make -C build'
 vim.api.nvim_set_keymap("n", "<leader>mk", ":!make -C build<CR>", { noremap = true })
+
+-- clang formatter --
+-- Automatic formatting on save
+vim.cmd([[autocmd BufWritePre *.cpp,*.h,*.cc,*.hpp,*.cxx,*.hxx,*.c,*.h silent! execute 'ClangFormat']])
+
+-- Manually trigger formatting with a key mapping
+vim.api.nvim_set_keymap("n", "<leader>cf", ":ClangFormat<CR>", { silent = true })
