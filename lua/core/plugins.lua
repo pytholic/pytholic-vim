@@ -93,4 +93,5 @@ return require("packer").startup(function(use)
 
 	-- clang formatter --
 	use("rhysd/vim-clang-format")
+    vim.g.clang_format#style = "Google"
 end)
