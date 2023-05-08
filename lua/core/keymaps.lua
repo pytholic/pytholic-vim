@@ -74,3 +74,9 @@ vim.keymap.set("n", "<leader>rp", ":RunProject<CR>", { noremap = true, silent = 
 vim.keymap.set("n", "<leader>rc", ":RunClose<CR>", { noremap = true, silent = false })
 vim.keymap.set("n", "<leader>crf", ":CRFiletype<CR>", { noremap = true, silent = false })
 vim.keymap.set("n", "<leader>crp", ":CRProjects<CR>", { noremap = true, silent = false })
+
+-- cmake and make keymaps --
+-- Keymap for running 'cmake -S . -B build'
+vim.api.nvim_set_keymap("n", "<leader>cm", ":!cmake -S . -B build<CR>", { noremap = true })
+-- Keymap for running 'make -C build'
+vim.api.nvim_set_keymap("n", "<leader>mk", ":!make -C build<CR>", { noremap = true })
