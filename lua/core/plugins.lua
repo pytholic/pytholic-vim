@@ -93,4 +93,7 @@ return require("packer").startup(function(use)
 
 	-- clang formatter --
 	use("rhysd/vim-clang-format")
+
+	-- nvim-dap --
+	use("mfussenegger/nvim-dap")
 end)
