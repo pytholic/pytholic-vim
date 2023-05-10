@@ -9,6 +9,10 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+-- Disable default behavior of Option/Alt+Left and Option/Alt+Right
+vim.api.nvim_command("set ttimeout")
+vim.api.nvim_command("set ttimeoutlen=10")
+
 -- Remap ctrl-/ for vertical split
 vim.api.nvim_set_keymap("n", "<leader>/", ":vsplit<CR>", { noremap = true, silent = true })
 

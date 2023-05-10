@@ -96,4 +96,5 @@ return require("packer").startup(function(use)
 
 	-- nvim-dap --
 	use("mfussenegger/nvim-dap")
+	use("mfussenegger/nvim-dap-python")
 end)
