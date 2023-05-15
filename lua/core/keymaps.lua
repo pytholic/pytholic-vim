@@ -138,3 +138,16 @@ vim.keymap.set("n", "<leader>ds", function()
 	local widgets = require("dap.ui.widgets")
 	widgets.centered_float(widgets.scopes)
 end)
+
+-- swap panes --
+-- Swap split with the split to the left
+vim.api.nvim_set_keymap("n", "<C-w><S-Left>", "<C-w>H", { silent = true })
+
+-- Swap split with the split to the right
+vim.api.nvim_set_keymap("n", "<C-w><S-Right>", "<C-w>L", { silent = true })
+
+-- Swap split with the split above
+vim.api.nvim_set_keymap("n", "<C-w><S-Up>", "<C-w>K", { silent = true })
+
+-- Swap split with the split below
+vim.api.nvim_set_keymap("n", "<C-w><S-Down>", "<C-w>J", { silent = true })
